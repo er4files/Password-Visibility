@@ -1,43 +1,48 @@
-/* style.css */
 @import url("https://use.fontawesome.com/releases/v6.4.2/css/all.css");
-
 body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100vh;
-    margin: 0;
 }
-
+.container {
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
 .password {
     position: relative;
     display: flex;
     align-items: center;
 }
-
 input {
     width: 30rem;
     height: 4em;
     padding: 1em;
-    border: 0;
-    border-radius: 1rem;
+    border: 2px solid #ccc;
+    border-radius: 8px;
     font-size: 1rem;
     letter-spacing: 1px;
     box-sizing: border-box;
 }
-
 input:focus {
     outline: none;
+    border-color: #007bff;
 }
-
 input::placeholder {
     color: #000;
     font-weight: bold;
 }
-
 i {
     position: absolute;
     right: 20px;
     cursor: pointer;
     user-select: none;
+    top: 50%;
+    transform: translateY(-50%); 
 }
