@@ -1,4 +1,3 @@
-// script.js
 const $password = document.querySelector('input');
 const $toggler = document.querySelector('.fa-eye');
 
